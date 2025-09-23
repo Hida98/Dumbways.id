@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Identitas Saya — Rukyatul Hidayah</title>
+    <style>
+      :root {
+        --bg: #f6f7fb;
+        --card: #fff;
+        --accent: #4f46e5;
+        --muted: #6b7280;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Inter, system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+        margin: 0;
+        background: var(--bg);
+        color: #111;
+      }
+      .page {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 24px;
+      }
+      .card {
+        background: var(--card);
+        border-radius: 14px;
+        box-shadow: 0 6px 20px rgba(17, 24, 39, 0.06);
+        padding: 24px;
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        gap: 20px;
+        align-items: center;
+      }
+      .avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 12px;
+        object-fit: cover;
+        border: 4px solid rgba(79, 70, 229, 0.08);
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.6rem;
+      }
+      p.lead {
+        margin: 8px 0 0;
+        color: var(--muted);
+      }
+      .info {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 14px;
+      }
+      .pill {
+        background: #f3f4ff;
+        color: var(--accent);
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+      .section {
+        margin-top: 18px;
+      }
+      .grid-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      ul {
+        margin: 6px 0 0;
+        padding-left: 18px;
+      }
+      a.btn {
+        display: inline-block;
+        padding: 10px 14px;
+        border-radius: 10px;
+        background: var(--accent);
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      footer {
+        margin-top: 26px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      @media (max-width: 640px) {
+        .card {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+        .info {
+          justify-content: center;
+        }
+        .grid-two {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <div class="card">
+        <img
+          class="avatar"
+          src="../Image/HIDA98.jpg"
+          alt="Foto Profil"
+        />
+        <div>
+          <h1>Rukyatul Hidayah</h1>
+          <div class="lead">Web developer • Pelajar • Designer</div>
+          <div class="info">
+            <div class="pill">Lokasi: Mataram, NTB</div>
+            <div class="pill">Email: rukyatulhidayah0698@gmail.com</div>
+            <div class="pill">Telepon: +62 87726633595</div>
+          </div>
+
+          <div class="section">
+            <h2 style="margin: 0 0 6px 0; font-size: 1.05rem">Tentang Saya</h2>
+            <p>
+              Halo! Saya Rukyatul Hidayah, Biasa dipanggil Hida. Saya tertarik
+              pada pengembangan web, UI/UX, dan membuat solusi digital yang
+              berguna. Saya suka belajar teknologi baru dan membangun proyek
+              yang nyata.
+            </p>
+          </div>
+
+          <div class="section grid-two">
+            <div>
+              <h3 style="margin: 0 0 6px 0; font-size: 0.95rem">Keahlian</h3>
+              <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React / Vue (dasar)</li>
+                <li>Desain responsif & aksesibilitas</li>
+              </ul>
+            </div>
+            <div>
+              <h3 style="margin: 0 0 6px 0; font-size: 0.95rem">Pendidikan</h3>
+              <ul>
+                <li>S1/Mahasiswa — Universitas Terbuka - 2025</li>
+                <li>Course: Web Development</li>
+              </ul>
+            </div>
+          </div>
+
+      <footer>Dibuat dengan ❤</footer>
+    </main>
+  </body>
+</html>
