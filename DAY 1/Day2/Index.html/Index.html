@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Hut</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --bg: #f6f7fb;
+        --card: #fff;
+        --accent: #4f46e5;
+        --text: #333;
+        --muted: #666;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      nav {
+        background: var(--card);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav .logo {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: var(--accent);
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: var(--accent);
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: var(--card);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        text-align: left;
+      }
+
+      .container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .container p {
+        font-size: 1rem;
+        color: var(--muted);
+        line-height: 1.6;
+        margin-bottom: 1.2rem;
+      }
+
+      .btn {
+        display: inline-block;
+        background: var(--accent);
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+
+      .btn:hover {
+        background: #3730a3;
+      }
+
+      .download {
+        display: block;
+        margin-top: 0.6rem;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+
+      .download i {
+        font-size: 0.85rem;
+        margin-left: 6px;
+      }
+
+      .profile-section {
+        margin-top: 1rem;
+        text-align: center;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .socials {
+        margin: 0.6rem 0;
+      }
+
+      .socials a {
+        margin: 0 0.6rem;
+        font-size: 1.2rem;
+        color: var(--text);
+        transition: color 0.3s;
+      }
+
+      .socials a:hover {
+        color: var(--accent);
+      }
+
+      .profile img {
+        width: 150px;
+        height: 150px;
+        border-radius: 12px;
+        object-fit: cover;
+        margin-bottom: 0.5rem;
+      }
+
+      .profile h3 {
+        font-size: 1.1rem;
+      }
+
+      .profile p {
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+
+      /* Responsive */
+      @media (max-width: 600px) {
+        .container {
+          padding: 1.5rem;
+        }
+        .container h1 {
+          font-size: 1.5rem;
+        }
+        .container p {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">My Hut</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>Hi Welcome to my hut</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique
+        purus enim, libero egestas ut. Augue suspendisse blandit lorem massa
+        ipsum, amet, egestas mi. Id lacus, nunc, nunc sed id. Fusce et libero,
+        lectus amet, mus metus, mus mollis.
+      </p>
+      <a href="#" class="btn">Contact</a>
+      <span class="download"
+        >download CV <i class="fa-solid fa-arrow-down"></i
+      ></span>
+
+      <div class="profile-section">
+        <div class="socials">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <div class="profile">
+          <img src="../Image/HIDA98.jpg" alt="Profile" />
+          <h3>Rukyatul Hidayah</h3>
+          <p>Fullstack Developer</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
