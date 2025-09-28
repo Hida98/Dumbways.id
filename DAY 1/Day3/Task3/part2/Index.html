@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #dfe3e8;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        background: #f8f9fa;
+        padding: 10px 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      nav .navbar-brand img {
+        height: 40px;
+      }
+
+      nav .nav-link {
+        color: #000 !important;
+        font-weight: 500;
+        margin-right: 15px;
+      }
+
+      nav .btn-contact {
+        background: #0b0c10;
+        color: #fff;
+        border-radius: 20px;
+        padding: 5px 15px;
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+
+      .contact-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+      }
+
+      .contact-form {
+        background: #dfe3e8;
+        padding: 40px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .contact-form h2 {
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .form-control {
+        border-radius: 8px;
+        padding: 12px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border: none;
+      }
+
+      textarea.form-control {
+        height: 120px;
+      }
+
+      .btn-submit {
+        display: block;
+        margin: 20px auto 0;
+        padding: 8px 40px;
+        border-radius: 30px;
+        background: #0b0c10;
+        color: #fff;
+        border: none;
+        font-weight: 500;
+        text-transform: lowercase;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .btn-submit:hover {
+        background: #343a40;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+        <img src="https://dummyimage.com/40x40/ff0000/fff&text=DU" alt="Logo" />
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Project</a>
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn-contact">Contact Me</a>
+      </div>
+    </nav>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-form">
+        <h2>GET IN TOUCH</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              placeholder="Your Phone Number"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <select class="form-control" id="subject" required>
+              <option value="">Select a subject</option>
+              <option value="project">Project Inquiry</option>
+              <option value="collab">Collaboration</option>
+              <option value="support">Support</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-submit">submit</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
