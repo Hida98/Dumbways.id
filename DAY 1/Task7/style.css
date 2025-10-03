@@ -1,0 +1,28 @@
+body {
+  background: #f0f2f5;
+}
+
+.form-section {
+  background: #e5e7eb;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.btn-submit {
+  background: #0f172a;
+  color: #fff;
+  border-radius: 25px;
+  padding: 6px 20px;
+  border: none;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.tech-icons i {
+  font-size: 20px;
+  margin-right: 8px;
+}
