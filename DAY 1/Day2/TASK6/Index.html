@@ -197,7 +197,6 @@
 
       renderProjects();
 
-     
       document
         .getElementById("addProjectForm")
         .addEventListener("submit", function (e) {
@@ -217,14 +216,12 @@
             description: document.getElementById("description").value,
           };
 
-          
           projects.push(newProject);
 
-          
           localStorage.setItem("projects", JSON.stringify(projects));
 
           renderProjects();
-          this.reset()
+          this.reset();
         });
     </script>
 
